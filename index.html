@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       @font-face {
+            font-family: "epaomayek";
+            src: url("EPAOMAYEK.ttf") ;
+        }
+        .first{
+            display: flex;
+            padding-left: 6%;
+            padding-bottom: 20px;
+        }
+        .second{
+            display: flex;
+        }
+        .second1{
+            width: 60%;
+            padding-right: 80px;
+        }
+        .notice{
+            width: 40%%;
+        }
+        .second3{
+            display: flex;
+        }
+        .second1 > img{
+            float: left;  
+            margin: 0 10px 0 0;
+
+        }
+        h1{
+            color: #17A43B;
+            font-family: Calibri;
+        }
+        h3{
+            font-family: arial black;
+        }
+        nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #17A43B;
+    padding-left: 120px;
+}
+.mm{
+    font-size: 30px;
+    color: #17A43B;
+}
+.mn{
+    font-size: 35px;
+    color: #17A43B;
+    font-family: Bahnschrift Condensed;
+}
+#color{
+    background-color: orange;
+}
+nav li {
+    float: left;
+    border-right: 1px solid white;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+    padding: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.dropdown .dropdown-btn {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Aptos Display;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #17A43B;
+    min-width: 260px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 5px solid gray;
+}
+#se > a:hover{
+    background-color: darkgreen;
+}
+.dropdown-content a {
+    float: none;
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+.dropdown-content a:hover {
+    background-color: #17A43B;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropdown-btn {
+    background-color: #17A43B;
+}
+#color:hover .dropdown-btn {
+    background-color: orange;
+}
+        main{
+            margin-left: 5%;
+        }
+        .notice-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      
+      .notice-row {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+      }
+      
+      .notice-date {
+        background-color: #a3772b;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 30px;
+        font-weight: bold;
+        font-family: 'Segoe UI', sans-serif;
+        white-space: nowrap;
+        font-size: 10px;
+      }
+      
+      .notice-row a {
+        color: orange;
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: 'Segoe UI', sans-serif;
+      }
+      
+      footer {
+      display: flex;
+      background-color: #eeeeee;
+      height: 550px;
+    }
+    .contact-form {
+      background-color: #36D7B7;
+      padding: 20px;
+      width: 36%;
+    
+    }
+    .contact-form input, .contact-form textarea {
+      width: 85%;
+      margin-bottom: 10px;
+      padding: 8px;
+      border: none;
+      background-color: #d7f8ed;
+    }
+    .contact-form button {
+      background-color: #0033cc;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      cursor: pointer;
+    }
+    .PL a{
+        font-size: 18px;
+        color: #a3772b;
+    }
+    .bottom {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+   
+    </style>
+</head>
+<body>
+    <div class="first">
+        <div>
+        <img src="nielit.logo.jpg" width="110px">
+        </div>
+        <div>
+        <font face="epaomayek">
+            <span class="mm">nesneL INstitiY Aof Aelet_roniQs AeN INformeNsN teQnoloji</span><br>
+        </font>
+            <span class="mn"><b>&nbsp;&nbsp;NATIONAL INSTITUTE OF ELECTRONIC AND INFORMATION TECHNOLOGY</b></span><br>
+            <b>&nbsp;&nbsp;&nbsp;&nbsp;Recog: National Council of Teacher Education, Manipur, Perm Affiliation: Manipur University Canchipur,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;NAAC Accreditation B, Included Under Sec 2(f) & 12 (B) of UGC ACT 1956</b>
+        </div>
+    </div>   
+    <nav>
+        <div>
+        <ul>
+            <li class="dropdown" id="color"><a href="#" class="dropdown-btn">Home</a></li>
+            <li class="dropdown"><a href="#" class="dropdown-btn">About us</a></li>
+            <li class="dropdown" id="se">
+                <a href="#" class="dropdown-btn" >Faculty & Non-Teaching Staff</a>
+                <div class="dropdown-content">
+                    <a href="#">Sanction Strength&Vacancy</a>
+                    <a href="#">BCA faculty</a>
+                    <a href="#">MCA faculty</a>
+                    <a href="#">Non teaching staff</a>
+                </div>
+            </li>
+            <li class="dropdown" id="se">
+                <a href="#" class="dropdown-btn">Administration</a>
+                <div class="dropdown-content">
+                    <a href="#">Institute Structure</a>
+                    <a href="#">Governance Structure</a>
+                </div>
+            </li>
+            <li class="dropdown" id="se">
+                <a href="#" class="dropdown-btn">Academic</a>
+                <div class="dropdown-content">
+                    <a href="#">Attendance</a>
+                    <a href="#">General Information of Students</a>
+                    <a href="#">Academic Management</a>
+                    <a href="#">Academic Management</a>
+                    <a href="#">College Rule and Regulation</a>
+                    <a href="#">Time Table</a>
+                    <a href="#">Holiday List</a>
+                    <a href="#">Academic Calendar</a>
+                </div>
+            </li>
+            <li class="dropdown" id="se">
+                <a href="#" class="dropdown-btn">Courses</a>
+                <div class="dropdown-content">
+                    <a href="#">Admission</a>
+                    <a href="#">BCA Course of Study</a>
+                    <a href="#">MCA Course of Study</a>
+                </div>
+            </li>
+            <li class="dropdown"><a href="#" class="dropdown-btn">Gallery</a></li>
+            <li class="dropdown" id="se">
+                <a href="#" class="dropdown-btn">Infrastructure</a>
+                <div class="dropdown-content">
+                    <a href="#">Campus and Infrastructure</a>
+                    <a href="#">Library and Labs</a>
+                    <a href="#">CCA</a>
+                    <a href="#">Hostel</a>
+                </div>
+            </li>
+            <li class="dropdown"><a href="#" class="dropdown-btn">Download Doc</a></li>
+            <li class="dropdown"><a href="#" class="dropdown-btn">Notice</a></li>
+        </ul>
+        </div>
+    </nav>
+    <br><br><br>
+    <img src="QQKAI.jpg" alt="" height="600px" width="100%">
+    <main>
+        <div class="second">
+            <div class="second1">
+                <h1>WELCOME TO NIELIT,IMPHAL OFFICIAL WEBSITE</h1>
+                <img src="QQKAI2.jpg" height="310px" width="450px">
+                <font size="5px" ><pre>The National Institute of Electronics & Information<br>Technology  (NIELIT) , formerly known as the DOEACC<br>Society, is an Autonomous  Scientific Society opera<br>ting under the administrative control of the Minist<br>ry  of Electronics & Information Technology (MeitY),<br>Government of India. Established with the objective<br>of fostering Human Resource Development and associa<br>ted activities in the domain of Information, Electr<br>onics, and Communications Technology (IECT), NIELIT<br>has played a  pivotal  role  in  enhancing  digital<br>literacy and technical education across the country.
+NIELIT  actively  engages  in formal and non-formal<br>education  within  the  IECT sector.It continuously<br>develops industry-relevant,high-quality educational<br>and training programs in  cutting-edge fields  such as  Artificial  Intelligence (AI) , Cyber<br>Security  and  Forensics, Blockchain , Internet of Things (IoT), Cloud Computing, Electronics<br>System Design & Manufacturing (ESDM), and various other emerging technology domains. Offering<br>a broad range of courses,from diploma and degree programs to specialized skilling initiatives,<br>NIELIT also functions as a National Examination and Accreditation Body, ensuring the credibil<br>ity  and quality of IT and electronics-related courses conducted by affiliated institutes and<br>organizations in  the non-formal  education sector . With this recognition , NIELIT is set to<br>transform into a Digital University, adopting advanced pedagogical approaches to deliver high-<br>quality, technology-driven education.READ MORE</pre></font>
+            </div> 
+            <div class="notice">
+                <h1>NOTICE</h1>
+                <div class="notice-container">
+                    <div class="notice-row">
+                      <div class="notice-date">05 Dec 2025</div>
+                      <a href="#">MCA Admission 2024</a>
+                    </div>
+                    <div class="notice-row">
+                      <div class="notice-date">05 Jun 2025</div>
+                      <a href="#">BCA Entrance Exam, 2024</a>
+                    </div>
+                    <div class="notice-row">
+                      <div class="notice-date">27 May 2025</div>
+                      <a href="#">BCA Admission Notice, 13 May,2024</a>
+                    </div>
+                    <div class="notice-row">
+                      <div class="notice-date">18 Apr 2023</div>
+                      <a href="#">Employment Notice, 06 April 2023</a>
+                    </div>
+                    <div class="notice-row">
+                      <div class="notice-date">04 Nov 2025</div>
+                      <a href="#">MCA Admission Notice, 04 October 2022</a>
+                    </div>
+                    <div class="notice-row">
+                      <div class="notice-date">26 Jul 2021</div>
+                      <a href="#">Capturing of Finger prints or Bio-Metric attendance</a>
+                    </div>
+                  </div>
+                  <h3 style="color: green; font-family: Arial black; ">ACCREDITATION</h3><br>
+                    <font size="5"><pre>NIELIT centers are accredited and certified<br>by various agencies including ISO 9001:2015.<br>NIELIT has been  providing quality training<br>and education for over two decades and cont<br>inues to evolve with technology  and global<br>trends.
+                    </pre></font>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div style="width: 30%; padding: 30px; padding-left: 50px;">
+            <h3 style="color: green;">IMPORTANT LINK</h3>
+            <ol class="ol" type="1">
+              <li><a href="#">Ministry of Electronics and IT</a></li>
+              <li><a href="#">AICTE</a></li>
+              <li><a href="#">UGC</a></li>
+            </ol>
+      
+            <h3 style="color: green;">OUR OTHER INSTITUTION</h3>
+            <ol class="PL">
+              <li><a href="#">NIELIT Delhi</a></li>
+              <li><a href="#">NIELIT Imphal</a></li>
+              <li><a href="#">NIELIT Aurangabad</a></li>
+            </ol>
+          </div>
+      
+          <div style="width: 36%; padding-top: 30px;">
+            <h3 style="color: green;">&nbsp;&nbsp;CONTACT ADDRESS</h3>
+            <p style="font-size: 18px; font-weight: bolder;">
+              National Institute of Electronics and Information Technology (NIELIT)
+            </p>
+            <p style="font-size: 18px;">
+              Ministry of Electronics & IT, Govt. of India <br/>
+              <i>Email</i>: info@nielit.gov.in <br/>
+              Phone: +91-1234-567890 
+            </p>
+            <p style="font-size: 23px; font-weight: bolder;">
+              Connect with us:<br/>
+              <img src="faceb2.png" width="20px"/>
+              <img src="twiter.png" width="20px"/>
+              <img src="youtube.jpg" width="20px"/>
+            </p>
+          </div>
+      
+          <div class="contact-form">
+            <h3 style="color: white; margin-left: 30px;">CONTACT FORM</h3>
+            <form>
+                <table width="100%" cellpadding="5px">
+                    <tr>
+                        <td valign="top" align="right" width="20%"><font color="white" size="3px">Name</font></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td valign="top" align="right" width="20%"><font color="white" size="3px">Contact No.</font></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td valign="top" align="right" width="20%"><font color="white" size="3px">Email</font></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td valign="top" align="right" width="20%"><font color="white" size="3px">Subject</font></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td valign="top" align="right" width="20%"><font color="white" size="3px">Message</font></td>
+                        <td><textarea style="height: 70px;"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button style="border: 1px solid white;">SUBMIT</button></td>
+                    </tr>
+                </table>
+            </form>
+            
+        </div>
+    </footer>
+    <div class="bottom">
+        © Copyright NATIONAL INSTITUTE OF ELECTRONICS & INFORMATION TECHNOLOGY (NIELIT) 2025. All Rights Reserved.
+      </div>
+       
+      
+</body>
+</html>
